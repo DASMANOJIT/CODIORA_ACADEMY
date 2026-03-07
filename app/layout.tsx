@@ -1,4 +1,5 @@
 import { Playfair_Display, DM_Sans } from "next/font/google";
+import type { ReactNode } from "react";
 import "./globals.css";
 
 const playfair = Playfair_Display({
@@ -20,7 +21,7 @@ export const metadata = {
     images: ['/images/logo.jpg'],
   },
 };
-export default function RootLayout({ children }) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" className={`${playfair.variable} ${dmSans.variable}`}>
       <body>{children}</body>
