@@ -15,8 +15,8 @@ export default function Navbar() {
 
   const navLinks = [
     { label: "Courses", href: "#courses" },
-    { label: "Study Material", href: "#resources" },
-    { label: "Mock Tests", href: "#tests" },
+    { label: "Study Material", href: "https://drive.google.com/drive/folders/195C7fPLymEjnM8q4r6Z0Zamp5raJo9jE?usp=sharings" },
+    { label: "Mock Tests", href: "#enroll" },
     { label: "Hybrid Model", href: "#hybrid" },
     { label: "Testimonials", href: "#testimonials" },
   ];
@@ -90,7 +90,7 @@ export default function Navbar() {
         {/* CTA */}
         <div style={{ display: "flex", gap: "12px", alignItems: "center" }} className="desktop-cta">
           <a
-            href="#resources"
+            href="https://drive.google.com/drive/folders/195C7fPLymEjnM8q4r6Z0Zamp5raJo9jE?usp=sharings"
             style={{
               color: "#F5A623",
               textDecoration: "none",

@@ -221,7 +221,7 @@ export default function Hero() {
           }}
         >
           <a
-            href="#resources"
+            href="https://drive.google.com/drive/folders/195C7fPLymEjnM8q4r6Z0Zamp5raJo9jE?usp=sharing"
             style={{
               display: "inline-flex",
               alignItems: "center",

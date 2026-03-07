@@ -2,10 +2,61 @@
 
 export default function Footer() {
   const links = {
-    "Learn": ["CBSE Materials", "ICSE Materials", "Chapter Notes", "Revision Guides", "Video Lessons"],
-    "Practice": ["Online Mock Tests", "Offline Test Series", "Previous Year Papers", "Subject Tests", "Performance Reports"],
-    "Company": ["About Codiora", "Our Teachers", "Blog", "Contact Us", "Locate Our Center"],
+    "Learn": [
+      { label: "CBSE Materials", href: "https://drive.google.com/drive/folders/195C7fPLymEjnM8q4r6Z0Zamp5raJo9jE?usp=sharing" },
+      { label: "ICSE Materials", href: "https://drive.google.com/drive/folders/195C7fPLymEjnM8q4r6Z0Zamp5raJo9jE?usp=sharing" },
+      { label: "Chapter Notes", href: "https://drive.google.com/drive/folders/195C7fPLymEjnM8q4r6Z0Zamp5raJo9jE?usp=sharing" },
+      { label: "Revision Guides", href: "https://drive.google.com/drive/folders/195C7fPLymEjnM8q4r6Z0Zamp5raJo9jE?usp=sharing" },
+      { label: "Video Lessons", href: "https://youtube.com/@codioraacademy?si=pUWxEBYry8kKg1Tt" },
+    ],
+    "Practice": [
+      { label: "Online Mock Tests", href: "/practice/online-mock-tests" },
+      { label: "Offline Test Series", href: "/practice/offline-test-series" },
+      { label: "Previous Year Papers", href: "/practice/previous-year-papers" },
+      { label: "Subject Tests", href: "/practice/subject-tests" },
+      { label: "Performance Reports", href: "/practice/performance-reports" },
+    ],
+    "Company": [
+      { label: "About Codiora", href: "/company/about" },
+      { label: "Our Teachers", href: "/company/teachers" },
+      { label: "Blog", href: "/company/blog" },
+      { label: "Contact Us", href: "/company/contact" },
+      { label: "Locate Our Center", href: "/company/locate" },
+    ],
   };
+
+  const socials = [
+    {
+      label: "Instagram",
+      href: "https://www.instagram.com/codiora_academy/",
+      icon: (
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+        </svg>
+      ),
+    },
+    {
+      label: "YouTube",
+      href: "https://youtube.com/@codioraacademy?si=zO5wAaXMDiSjLAJU",
+      icon: (
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+          <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-1.96C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 1.96A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1C5.12 19.56 12 19.56 12 19.56s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-1.95 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/>
+          <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/>
+        </svg>
+      ),
+    },
+    {
+      label: "WhatsApp",
+      href: "https://wa.me/91XXXXXXXXXX",
+      icon: (
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
+          <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+        </svg>
+      ),
+    },
+  ];
 
   return (
     <footer style={{
@@ -38,29 +89,12 @@ export default function Footer() {
             </p>
             {/* Social Icons */}
             <div style={{ display: "flex", gap: "12px" }}>
-              {[
-                { label: "Instagram", icon: (
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
-                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
-                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
-                  </svg>
-                )},
-                { label: "YouTube", icon: (
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
-                    <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-1.96C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 1.96A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19.1C5.12 19.56 12 19.56 12 19.56s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-1.95 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/>
-                    <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/>
-                  </svg>
-                )},
-                { label: "WhatsApp", icon: (
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
-                    <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
-                  </svg>
-                )},
-              ].map((s) => (
+              {socials.map((s) => (
                 <a
                   key={s.label}
-                  href="#"
+                  href={s.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label={s.label}
                   style={{
                     width: "40px",
@@ -108,9 +142,9 @@ export default function Footer() {
               </h4>
               <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "10px" }}>
                 {items.map((item) => (
-                  <li key={item}>
+                  <li key={item.label}>
                     <a
-                      href="#"
+                      href={item.href}
                       style={{
                         fontFamily: "'DM Sans', sans-serif",
                         fontSize: "14px",
@@ -121,7 +155,7 @@ export default function Footer() {
                       onMouseEnter={(e) => e.target.style.color = "#F5A623"}
                       onMouseLeave={(e) => e.target.style.color = "rgba(255,255,255,0.4)"}
                     >
-                      {item}
+                      {item.label}
                     </a>
                   </li>
                 ))}
@@ -178,8 +212,12 @@ export default function Footer() {
             © {new Date().getFullYear()} Codiora Academy. All rights reserved.
           </p>
           <div style={{ display: "flex", gap: "24px" }}>
-            {["Privacy Policy", "Terms of Service", "Refund Policy"].map((item) => (
-              <a key={item} href="#" style={{
+            {[
+              { label: "Privacy Policy", href: "/privacy-policy" },
+              { label: "Terms of Service", href: "/terms-of-service" },
+              { label: "Refund Policy", href: "/refund-policy" },
+            ].map((item) => (
+              <a key={item.label} href={item.href} style={{
                 fontFamily: "'DM Sans', sans-serif",
                 fontSize: "12px",
                 color: "rgba(255,255,255,0.25)",
@@ -189,7 +227,7 @@ export default function Footer() {
               onMouseEnter={(e) => e.target.style.color = "rgba(245,166,35,0.7)"}
               onMouseLeave={(e) => e.target.style.color = "rgba(255,255,255,0.25)"}
               >
-                {item}
+                {item.label}
               </a>
             ))}
           </div>

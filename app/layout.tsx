@@ -12,7 +12,14 @@ const dmSans = DM_Sans({
   variable: "--font-dm-sans",
   display: "swap",
 });
-
+export const metadata = {
+  metadataBase: new URL('https://www.codioraacademy.com'),
+  authors: [{ name: 'Codiora Academy' }],
+  robots: { index: true, follow: true },
+  openGraph: {
+    images: ['/images/logo.jpg'],
+  },
+};
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${playfair.variable} ${dmSans.variable}`}>
