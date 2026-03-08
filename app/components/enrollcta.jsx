@@ -187,7 +187,7 @@ export default function EnrollCTA() {
             color: "#FFFFFF",
             marginBottom: "6px",
           }}>
-            Claim Free Access
+            Contact Us
           </h3>
           <p style={{
             fontFamily: "'DM Sans', sans-serif",
@@ -306,7 +306,7 @@ export default function EnrollCTA() {
                   </svg>
                   Processing...
                 </>
-              ) : "Get Free Access Now →"}
+              ) : "Enroll Now →"}
             </button>
 
             <p style={{

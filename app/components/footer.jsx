@@ -10,18 +10,18 @@ export default function Footer() {
       { label: "Video Lessons", href: "https://youtube.com/@codioraacademy?si=pUWxEBYry8kKg1Tt" },
     ],
     "Practice": [
-      { label: "Online Mock Tests", href: "/practice/online-mock-tests" },
-      { label: "Offline Test Series", href: "/practice/offline-test-series" },
-      { label: "Previous Year Papers", href: "/practice/previous-year-papers" },
-      { label: "Subject Tests", href: "/practice/subject-tests" },
-      { label: "Performance Reports", href: "/practice/performance-reports" },
+      { label: "Online Mock Tests", href: "" },
+      { label: "Offline Test Series", href: "" },
+      { label: "Previous Year Papers", href: "" },
+      { label: "Subject Tests", href: "" },
+      { label: "Performance Reports", href: "" },
     ],
     "Company": [
-      { label: "About Codiora", href: "/company/about" },
-      { label: "Our Teachers", href: "/company/teachers" },
-      { label: "Blog", href: "/company/blog" },
-      { label: "Contact Us", href: "/company/contact" },
-      { label: "Locate Our Center", href: "/company/locate" },
+      { label: "About Codiora", href: "" },
+      { label: "Our Teachers", href: "" },
+      { label: "Blog", href: "" },
+      { label: "Contact Us", href: "" },
+      { label: "Locate Our Center", href: "" },
     ],
   };
 
@@ -76,7 +76,11 @@ export default function Footer() {
         >
           {/* Brand */}
           <div>
-            <img src="/logo.png" alt="Codiora Academy" style={{ height: "120px", marginBottom: "20px" }} />
+            <img
+              src="/logo.png"
+              alt="Codiora Academy student success platform logo with free study materials and online mentorship"
+              style={{ height: "120px", marginBottom: "20px" }}
+            />
             <p style={{
               fontFamily: "'DM Sans', sans-serif",
               fontSize: "14px",

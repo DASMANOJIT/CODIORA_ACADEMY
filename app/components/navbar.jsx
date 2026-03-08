@@ -50,7 +50,11 @@ export default function Navbar() {
       >
         {/* Logo */}
         <Link href="/" style={{ display: "flex", alignItems: "center", gap: "10px", textDecoration: "none" }}>
-          <img src="/logo.png" alt="Codiora Academy" style={{ height: "120px", width: "auto" }} />
+          <img
+            src="/logo.png"
+            alt="Codiora Academy logo - online learning platform for students and free educational content"
+            style={{ height: "120px", width: "auto" }}
+          />
         </Link>
 
         {/* Desktop Nav */}
