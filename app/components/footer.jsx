@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 export default function Footer() {
   const links = {
     "Learn": [
@@ -10,18 +12,18 @@ export default function Footer() {
       { label: "Video Lessons", href: "https://youtube.com/@codioraacademy?si=pUWxEBYry8kKg1Tt" },
     ],
     "Practice": [
-      { label: "Online Mock Tests", href: "" },
-      { label: "Offline Test Series", href: "" },
-      { label: "Previous Year Papers", href: "" },
-      { label: "Subject Tests", href: "" },
-      { label: "Performance Reports", href: "" },
+      { label: "Online Mock Tests", href: "/#enroll" },
+      { label: "Offline Test Series", href: "/#enroll" },
+      { label: "Previous Year Papers", href: "/#enroll" },
+      { label: "Subject Tests", href: "/#enroll" },
+      { label: "Performance Reports", href: "/#enroll" },
     ],
     "Company": [
-      { label: "About Codiora", href: "" },
-      { label: "Our Teachers", href: "" },
-      { label: "Blog", href: "" },
-      { label: "Contact Us", href: "" },
-      { label: "Locate Our Center", href: "" },
+      { label: "About Codiora", href: "/about" },
+      { label: "Our Teachers", href: "/teachers" },
+      { label: "Blog", href: "/blog" },
+      { label: "Contact Us", href: "/#enroll" },
+      { label: "Locate Our Center", href: "#" },
     ],
   };
 
@@ -57,6 +59,8 @@ export default function Footer() {
       ),
     },
   ];
+
+  const isInternalHref = (href) => typeof href === "string" && href.startsWith("/");
 
   return (
     <footer style={{
@@ -147,20 +151,52 @@ export default function Footer() {
               <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "10px" }}>
                 {items.map((item) => (
                   <li key={item.label}>
-                    <a
-                      href={item.href}
-                      style={{
-                        fontFamily: "'DM Sans', sans-serif",
-                        fontSize: "14px",
-                        color: "rgba(255,255,255,0.4)",
-                        textDecoration: "none",
-                        transition: "color 0.2s",
-                      }}
-                      onMouseEnter={(e) => e.target.style.color = "#F5A623"}
-                      onMouseLeave={(e) => e.target.style.color = "rgba(255,255,255,0.4)"}
-                    >
-                      {item.label}
-                    </a>
+                    {item.href === "#" ? (
+                      <a
+                        href="#"
+                        style={{
+                          fontFamily: "'DM Sans', sans-serif",
+                          fontSize: "14px",
+                          color: "rgba(255,255,255,0.4)",
+                          textDecoration: "none",
+                          transition: "color 0.2s",
+                        }}
+                        onMouseEnter={(e) => e.target.style.color = "#F5A623"}
+                        onMouseLeave={(e) => e.target.style.color = "rgba(255,255,255,0.4)"}
+                      >
+                        {item.label}
+                      </a>
+                    ) : isInternalHref(item.href) ? (
+                      <Link
+                        href={item.href}
+                        style={{
+                          fontFamily: "'DM Sans', sans-serif",
+                          fontSize: "14px",
+                          color: "rgba(255,255,255,0.4)",
+                          textDecoration: "none",
+                          transition: "color 0.2s",
+                        }}
+                        onMouseEnter={(e) => e.target.style.color = "#F5A623"}
+                        onMouseLeave={(e) => e.target.style.color = "rgba(255,255,255,0.4)"}
+                      >
+                        {item.label}
+                      </Link>
+                    ) : (
+                      <a
+                        href={item.href}
+                        style={{
+                          fontFamily: "'DM Sans', sans-serif",
+                          fontSize: "14px",
+                          color: "rgba(255,255,255,0.4)",
+                          textDecoration: "none",
+                          transition: "color 0.2s",
+                        }}
+                        onMouseEnter={(e) => e.target.style.color = "#F5A623"}
+                        onMouseLeave={(e) => e.target.style.color = "rgba(255,255,255,0.4)"}
+                      >
+                        {item.label}
+                      </a>
+                    )}
                   </li>
                 ))}
               </ul>

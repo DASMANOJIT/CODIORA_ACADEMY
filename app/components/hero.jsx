@@ -63,7 +63,7 @@ export default function Hero() {
     { value: "1,000+", label: "Test Papers" },
     { value: "500+", label: "Happy Students" },
     { value: "CBSE & ICSE", label: "Boards Covered" },
-    { value: "Class 6–12", label: "All Grades" },
+    { value: "Class 6–10", label: "All Grades" },
   ];
 
   return (
@@ -205,7 +205,7 @@ export default function Hero() {
           }}
         >
           Access premium online resources, chapter-wise notes, and offline mock
-          tests — designed for CBSE & ICSE students from Class 6 to 12.
+          tests — designed for CBSE & ICSE students from Class 6 to 10.
         </p>
 
         {/* CTA Buttons */}

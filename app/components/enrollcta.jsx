@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 
-const WHATSAPP_NUMBER = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "8617759263";
+const WHATSAPP_NUMBER = process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "6289918463";
 
 export default function EnrollCTA() {
   const [visible, setVisible] = useState(false);
@@ -247,7 +247,7 @@ export default function EnrollCTA() {
                   onBlur={e => e.target.style.borderColor = "rgba(255,255,255,0.1)"}
                 >
                   <option value="" style={{ background: "#1a1a1a" }}>Select</option>
-                  {[6,7,8,9,10,11,12].map(c => (
+                  {[6,7,8,9,10].map(c => (
                     <option key={c} value={`Class ${c}`} style={{ background: "#1a1a1a" }}>Class {c}</option>
                   ))}
                 </select>

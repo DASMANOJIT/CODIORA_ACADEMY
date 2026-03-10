@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 const testimonials = [
   {
     name: "Ananya Chatterjee",
-    grade: "Class 12, CBSE",
+    grade: "Class 8, CBSE",
     score: "94% in Boards",
     avatar: "AC",
     text: "Codiora's Physics notes are unlike anything I've seen. The chapter-wise breakdown made revision so much easier. My marks jumped from 72% to 94% this year!",
@@ -18,14 +18,14 @@ const testimonials = [
   },
   {
     name: "Priya Sharma",
-    grade: "Class 11, CBSE",
+    grade: "Class 10, CBSE",
     score: "96 in Maths",
     avatar: "PS",
     text: "The hybrid model is perfect. I study online in the evening after school and attend the offline tests on weekends. Best of both worlds, truly.",
   },
   {
     name: "Arjun Bose",
-    grade: "Class 12, ICSE",
+    grade: "Class 9, ICSE",
     score: "Chemistry 91%",
     avatar: "AB",
     text: "The free study material got me started and then I enrolled in the test series. The analytics after each test helped me identify my weak chapters instantly.",
