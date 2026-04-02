@@ -272,6 +272,43 @@ export default function Footer() {
             ))}
           </div>
         </div>
+
+        <div style={{
+          borderTop: "1px solid rgba(255,255,255,0.05)",
+          marginTop: "20px",
+          paddingTop: "18px",
+          textAlign: "center",
+        }}>
+          <p style={{
+            fontFamily: "'DM Sans', sans-serif",
+            fontSize: "12px",
+            color: "rgba(255,255,255,0.22)",
+            lineHeight: 1.7,
+          }}>
+            Developed and maintained by{" "}
+            <Link
+              href="https://dmstacklabs.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                color: "rgba(255,255,255,0.46)",
+                textDecoration: "none",
+                fontWeight: 600,
+                transition: "color 0.2s, text-decoration-color 0.2s",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.color = "rgba(245,166,35,0.82)";
+                e.currentTarget.style.textDecoration = "underline";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.color = "rgba(255,255,255,0.46)";
+                e.currentTarget.style.textDecoration = "none";
+              }}
+            >
+              DM Stack Labs
+            </Link>
+          </p>
+        </div>
       </div>
 
       <style>{`
